@@ -3,7 +3,7 @@ import Navbar from "./components/organisms/Navbar";
 
 const App = () => {
   return (
-    <main className="bg-background h-screen overflow-x-hidden">
+    <main className="h-screen">
       <header className="max-width-center relative">
         <Navbar />
         <Blur

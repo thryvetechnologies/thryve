@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+  @apply bg-background text-white overflow-x-hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
 @utility max-width-center {
   @apply max-w-[1920px] mx-auto;
 }
