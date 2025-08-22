@@ -1,5 +1,13 @@
+import Navbar from "./components/organisms/Navbar";
+
 const App = () => {
-  return <div className="underline">App</div>;
+  return (
+    <main className="bg-background">
+      <header className="max-width-center">
+        <Navbar />
+      </header>
+    </main>
+  );
 };
 
 export default App;

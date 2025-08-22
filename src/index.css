@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@utility max-width-center {
+  @apply max-w-[1920px] mx-auto;
+}
+
+@theme {
+  --color-background: #010201;
+  --color-primary: #fdd319;
+}
