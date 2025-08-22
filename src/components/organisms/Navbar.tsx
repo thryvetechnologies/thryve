@@ -18,7 +18,7 @@ const Navbar = () => {
         {navigationItems.map((item) => (
           <li
             key={item.title}
-            className="text-white transition-transform duration-200 hover:scale-110 hover:text-primary"
+            className="text-white transition-transform duration-200 hover:scale-110 hover:text-primary font-semibold"
           >
             <a href={item.href}>{item.title}</a>
           </li>
