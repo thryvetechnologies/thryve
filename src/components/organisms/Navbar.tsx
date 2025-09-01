@@ -6,15 +6,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between px-6 py-9 lg:px-24 lg:py-11">
+    <nav className="flex items-center justify-between">
       <img src="/icons/ThyrveLogo.svg" alt="Logo" />
       <img
         src="/icons/Hamburger.svg"
         alt="Hamburger Icon"
-        className="md:hidden"
+        className="lg:hidden"
       />
 
-      <ul className="hidden md:flex gap-x-36">
+      <ul className="hidden lg:flex gap-x-36">
         {navigationItems.map((item) => (
           <li
             key={item.title}

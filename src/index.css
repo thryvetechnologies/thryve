@@ -3,6 +3,11 @@
 body {
   @apply bg-background text-white overflow-x-hidden;
   font-family: "Montserrat", sans-serif;
+  height: 300vh;
+}
+
+@utility width-x-res {
+  @apply px-6 lg:px-24;
 }
 
 @utility max-width-center {
