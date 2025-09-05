@@ -3,24 +3,34 @@ import { Carousel } from "react-responsive-carousel";
 
 const Projects = () => {
   return (
-    <div style={{ maxWidth: "400px", maxHeight: "300px", margin: "0 auto" }}>
-      <Carousel autoPlay showThumbs={false}>
+    <div>
+      <h1>
+        <span className="text-primary">Designs</span> That Speak in Clicks
+      </h1>
+
+      <Carousel
+        // autoPlay
+        showThumbs={false}
+        showStatus={false}
+        // infiniteLoop
+        showArrows={true}
+      >
         <div>
           <img
             src="images/Sevinda.png"
-            style={{ width: "100%", height: "200px", objectFit: "cover" }}
+            style={{ width: "100%", height: "400px", objectFit: "contain" }}
           />
         </div>
         <div>
           <img
             src="images/Sihala.png"
-            style={{ width: "100%", height: "200px", objectFit: "cover" }}
+            style={{ width: "100%", height: "400px", objectFit: "contain" }}
           />
         </div>
         <div>
           <img
             src="images/Sevinda.png"
-            style={{ width: "100%", height: "200px", objectFit: "cover" }}
+            style={{ width: "100%", height: "400px", objectFit: "contain" }}
           />
         </div>
       </Carousel>
