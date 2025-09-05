@@ -1,6 +1,8 @@
 // import Blur from "./components/atoms/Blur";
+import AboutUs from "./components/organisms/AboutUs";
 import Hero from "./components/organisms/Hero";
 import Navbar from "./components/organisms/Navbar";
+import Projects from "./components/organisms/Projects";
 
 const App = () => {
   return (
@@ -17,6 +19,18 @@ const App = () => {
 
       <section className="max-width-center width-x-res mt-40">
         <Hero />
+      </section>
+
+      <section className="max-width-center width-x-res mt-40">
+        <AboutUs />
+      </section>
+
+      {/* <section className="max-width-center width-x-res mt-40">
+        <Hero />
+      </section> */}
+
+      <section className="max-width-center width-x-res mt-40">
+        <Projects />
       </section>
     </main>
   );
