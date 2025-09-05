@@ -1,8 +1,10 @@
 // import Blur from "./components/atoms/Blur";
 import AboutUs from "./components/organisms/AboutUs";
+import ContactUs from "./components/organisms/ContactUs";
 import Hero from "./components/organisms/Hero";
 import Navbar from "./components/organisms/Navbar";
 import Projects from "./components/organisms/Projects";
+import Services from "./components/organisms/Services";
 
 const App = () => {
   return (
@@ -31,6 +33,14 @@ const App = () => {
 
       <section className="max-width-center width-x-res mt-40">
         <Projects />
+      </section>
+
+      <section className="max-width-center width-x-res mt-40">
+        <Services />
+      </section>
+
+      <section className="max-width-center width-x-res mt-40">
+        <ContactUs />
       </section>
     </main>
   );
