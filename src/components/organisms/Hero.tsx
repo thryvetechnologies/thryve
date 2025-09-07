@@ -1,3 +1,5 @@
+import Button from "../atoms/Button";
+
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:gap-20 lg:h-[600px] relative">
@@ -13,7 +15,7 @@ const Hero = () => {
           delight, ensuring every interaction is not just functional, but
           genuinely intuitive and a joy to experience.
         </p>
-        <button>Contact Us</button>
+        <Button title="Contact Us" onClick={() => {}} />
       </div>
 
       <div className="absolute lg:relative top-1/2 lg:top-1/3 left-1/2 lg:left-auto -translate-x-1/2 -translate-y-1/2 lg:translate-x-0 lg:-translate-y-1/2 lg:w-1/2 lg:flex lg:items-center lg:justify-center pointer-events-none z-0">
