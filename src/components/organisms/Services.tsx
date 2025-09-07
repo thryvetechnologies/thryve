@@ -42,7 +42,7 @@ const Services = () => {
   }: {
     service: { id: number; name: string; icon: string; title: string };
   }) => (
-    <div className="relative flex h-[420px] flex-col items-center justify-start overflow-hidden rounded-2xl border border-amber-400/10 bg-black shadow-[0_0_8px_3px_rgba(253,211,25,.25)] transition-all duration-300 ease-in-out">
+    <div className="relative flex h-[420px] flex-col items-center overflow-hidden justify-start rounded-2xl border border-amber-400/10 bg-black shadow-[0_0_8px_3px_rgba(253,211,25,.25)] transition-all duration-300 ease-in-out">
       <h2 className="py-6 text-center text-lg sm:text-xl lg:text-2xl font-semibold text-white">
         {service.name}
       </h2>
