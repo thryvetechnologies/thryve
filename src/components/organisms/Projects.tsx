@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <>
       <section className="relative mx-auto max-w-[1200px] px-4 py-8">
-        <h1 className="mb-6 text-center text-3xl font-semibold text-white">
+        <h1 className="mb-12 text-center text-3xl font-semibold text-white">
           <span className="text-primary">Designs</span> That Speak in Clicks
         </h1>
 
