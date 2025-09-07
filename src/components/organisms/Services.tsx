@@ -17,28 +17,45 @@ const Services = () => {
   }, []);
 
   const services = [
-    { id: 1, name: "Service 01" },
-    { id: 2, name: "Service 02" },
-    { id: 3, name: "Service 03" },
+    {
+      id: 1,
+      name: "Service 01",
+      icon: "icons/WebDev.svg",
+      title: "Web Development",
+    },
+    {
+      id: 2,
+      name: "Service 02",
+      icon: "icons/UIUX.svg",
+      title: "UI/UX Design",
+    },
+    {
+      id: 3,
+      name: "Service 03",
+      icon: "icons/MobileDev.svg",
+      title: "Mobile Development",
+    },
   ];
 
   const ServiceCard = ({
     service,
   }: {
-    service: { id: number; name: string };
+    service: { id: number; name: string; icon: string; title: string };
   }) => (
-    <div className="relative flex h-[400px] flex-col items-center justify-start overflow-hidden rounded-2xl border border-amber-400/10 bg-black shadow-[0_0_8px_3px_rgba(253,211,25,.25)] transition-all duration-300 ease-in-out">
-      <h2 className="py-6 text-center text-2xl font-semibold text-white">
+    <div className="relative flex h-[420px] flex-col items-center justify-start overflow-hidden rounded-2xl border border-amber-400/10 bg-black shadow-[0_0_8px_3px_rgba(253,211,25,.25)] transition-all duration-300 ease-in-out">
+      <h2 className="py-6 text-center text-lg sm:text-xl lg:text-2xl font-semibold text-white">
         {service.name}
       </h2>
 
       <div className="flex flex-1 flex-col items-center justify-center">
         <img
-          src="icons/UnderDev.svg"
-          alt="Under Development"
+          src={service.icon}
+          alt={service.name}
           className="mb-4 h-20 w-20 object-contain"
         />
-        <p className="text-xl font-medium text-primary">Under Development</p>
+        <p className="text-base sm:text-lg lg:text-xl font-medium text-primary">
+          {service.title}
+        </p>
       </div>
 
       {/* subtle inner edge glow */}
