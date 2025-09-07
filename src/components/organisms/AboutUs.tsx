@@ -3,10 +3,10 @@ import TeamProfile from "../molecules/TeamProfile";
 const AboutUs = () => {
   return (
     <div className="relative mx-auto max-w-[1100px] px-4 py-8">
-      <h2 className="font-bold text-center mb-12 text-3xl text-white">
+      <h2 className="font-bold text-center mb-12 text-xl sm:text-2xl lg:text-3xl text-white">
         The <span className="text-primary">Code</span> Behind the Magic
       </h2>
-      <p className="text-center">
+      <p className="text-center text-sm sm:text-base lg:text-lg">
         Our journey began at university, ignited by a shared passion and a
         collective frustration with mediocre digital experiences. As
         undergraduates, a visionary UX architect and a skilled software

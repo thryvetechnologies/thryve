@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <>
       <section className="relative mx-auto max-w-[1200px] px-4 py-8">
-        <h1 className="mb-12 text-center text-3xl font-semibold text-white">
+        <h1 className="mb-12 text-center text-2xl sm:text-3xl lg:text-4xl font-semibold text-white">
           <span className="text-primary">Designs</span> That Speak in Clicks
         </h1>
 
@@ -106,7 +106,7 @@ const Projects = () => {
                   : "mx-10 my-4 scale-90 opacity-80 hover:scale-95"
               }`}
             >
-              <h2 className="py-6 text-center text-2xl font-semibold text-white">
+              <h2 className="py-6 text-center text-lg sm:text-xl lg:text-2xl font-semibold text-white">
                 {project.name}
               </h2>
 
@@ -116,7 +116,7 @@ const Projects = () => {
                   alt="Under Development"
                   className="mb-4 h-20 w-20 object-contain"
                 />
-                <p className="text-xl font-medium text-primary">
+                <p className="text-base sm:text-lg lg:text-xl font-medium text-primary">
                   Under Development
                 </p>
               </div>

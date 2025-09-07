@@ -57,17 +57,17 @@ const TeamProfile: React.FC = () => {
 
               <div className="hidden lg:flex absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-3 px-3 flex-col justify-start items-center text-center">
                 <div className="mb-4">
-                  <h1 className="text-xl font-bold mb-1">
+                  <h1 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1">
                     <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                       {member.name}
                     </span>
                   </h1>
-                  <h2 className="text-lg text-gray-300 font-light">
+                  <h2 className="text-base sm:text-lg lg:text-xl text-gray-300 font-light">
                     {member.title}
                   </h2>
                 </div>
                 <div className="flex-1 flex items-center">
-                  <p className="text-sm xl:text-base text-gray-400 leading-relaxed font-light">
+                  <p className="text-xs sm:text-sm lg:text-base text-gray-400 leading-relaxed font-light">
                     {member.description_desktop}
                   </p>
                 </div>
@@ -81,17 +81,17 @@ const TeamProfile: React.FC = () => {
                 }`}
               >
                 <div className="mb-2">
-                  <h1 className="text-base font-bold mb-1">
+                  <h1 className="text-sm sm:text-base font-bold mb-1">
                     <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                       {member.name}
                     </span>
                   </h1>
-                  <h2 className="text-xs text-gray-300 font-light">
+                  <h2 className="text-xs sm:text-sm text-gray-300 font-light">
                     {member.title}
                   </h2>
                 </div>
                 <div className="flex-1 flex items-center">
-                  <p className="text-[10px] text-gray-400 leading-relaxed font-light">
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
                     {member.description_mobile}
                   </p>
                 </div>
