@@ -2,7 +2,7 @@ import TeamProfile from "../molecules/TeamProfile";
 
 const AboutUs = () => {
   return (
-    <div className="relative mx-auto max-w-[1100px] px-4 py-8">
+    <div id="about-us" className="relative mx-auto max-w-[1100px] px-4 py-8">
       <h2 className="font-bold text-center mb-12 text-xl sm:text-2xl lg:text-3xl text-white">
         The <span className="text-primary">Code</span> Behind the Magic
       </h2>

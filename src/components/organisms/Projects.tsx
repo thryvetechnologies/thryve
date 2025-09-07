@@ -24,7 +24,10 @@ const Projects = () => {
 
   return (
     <>
-      <section className="relative mx-auto max-w-[1200px] px-4 py-8">
+      <section
+        id="projects"
+        className="relative mx-auto max-w-[1200px] px-4 py-8"
+      >
         <h1 className="mb-12 text-center text-2xl sm:text-3xl lg:text-4xl font-semibold text-white">
           <span className="text-primary">Designs</span> That Speak in Clicks
         </h1>

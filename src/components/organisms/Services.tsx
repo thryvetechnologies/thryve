@@ -64,7 +64,10 @@ const Services = () => {
   );
 
   return (
-    <section className="relative mx-auto max-w-[1200px] px-4 py-8">
+    <section
+      id="services"
+      className="relative mx-auto max-w-[1200px] px-4 py-8"
+    >
       <h1 className="mb-20 text-center text-2xl sm:text-3xl lg:text-4xl font-semibold text-white">
         What We <span className="text-primary">Craft</span> To Make Ideas Click
       </h1>

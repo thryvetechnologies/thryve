@@ -9,7 +9,7 @@ const ContactUs = () => {
   ];
 
   return (
-    <div className="pb-10">
+    <div id="contact-us" className="pb-10">
       <h2 className="font-bold text-center mb-20 text-xl sm:text-2xl lg:text-3xl text-white">
         Let's <span className="text-primary">Thryve</span> Together
       </h2>
