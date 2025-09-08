@@ -11,12 +11,6 @@ const ContactUs = () => {
     type: "success" | "error";
   } | null>(null);
 
-  // Custom styles to handle autofill
-  const inputStyle = {
-    WebkitBoxShadow: '0 0 0 1000px black inset',
-    WebkitTextFillColor: 'white !important',
-  } as React.CSSProperties;
-
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -96,7 +90,12 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <form ref={form} onSubmit={sendEmail} className="mt-20 lg:mt-0 flex-1">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="mt-20 lg:mt-0 flex-1"
+          autoComplete="off"
+        >
           {message && (
             <div
               className={`mb-4 p-3 rounded-lg text-center ${
@@ -116,12 +115,12 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="Enter your full name here"
                 name="name"
                 id="name"
                 required
-                style={inputStyle}
-                className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
+                autoComplete="off"
+                className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
               />
             </div>
 
@@ -131,12 +130,12 @@ const ContactUs = () => {
               </label>
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="Enter your email here"
                 name="email"
                 id="email"
                 required
-                style={inputStyle}
-                className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
+                autoComplete="off"
+                className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
               />
             </div>
           </div>
@@ -147,12 +146,12 @@ const ContactUs = () => {
             </label>
             <input
               type="text"
-              placeholder="Subject"
+              placeholder="Enter the subject here"
               name="title"
               id="subject"
               required
-              style={inputStyle}
-              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
+              autoComplete="off"
+              className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
             />
           </div>
 
@@ -161,13 +160,13 @@ const ContactUs = () => {
               Message
             </label>
             <textarea
-              placeholder="Message"
+              placeholder="Enter your message here"
               name="message"
               id="message"
               rows={4}
               required
-              style={inputStyle}
-              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 resize-vertical min-h-[120px]"
+              autoComplete="off"
+              className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 resize-vertical min-h-[120px]"
             ></textarea>
           </div>
 
