@@ -1,8 +1,14 @@
+import Blur from "../atoms/Blur";
 import TeamProfile from "../molecules/TeamProfile";
 
 const AboutUs = () => {
   return (
     <div id="about-us" className="relative mx-auto max-w-[1100px] px-4 py-8">
+      <Blur
+        mainClassName="hidden lg:block absolute -left-[750px] -top-20"
+        blurStrength="650"
+        blurSize="500"
+      />
       <h2 className="font-bold text-center mb-12 text-xl sm:text-2xl lg:text-3xl text-white">
         The <span className="text-primary">Code</span> Behind the Magic
       </h2>

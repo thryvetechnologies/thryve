@@ -1,4 +1,5 @@
 // import Blur from "./components/atoms/Blur";
+import Blur from "./components/atoms/Blur";
 import AboutUs from "./components/organisms/AboutUs";
 import ContactUs from "./components/organisms/ContactUs";
 import Hero from "./components/organisms/Hero";
@@ -12,11 +13,11 @@ const App = () => {
       <header className="max-width-center relative width-x-res py-9 lg:py-11">
         <Navbar />
         {/* small screens 150 and 200 */}
-        {/* <Blur
+        <Blur
           mainClassName="absolute -top-56 -right-20"
           blurStrength="250"
           blurSize="400"
-        /> */}
+        />
       </header>
 
       <section className="max-width-center width-x-res mt-40">

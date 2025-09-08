@@ -1,6 +1,7 @@
 import Button from "../atoms/Button";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Blur from "../atoms/Blur";
 
 const ContactUs = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -53,7 +54,12 @@ const ContactUs = () => {
   ];
 
   return (
-    <div id="contact-us" className="pb-10">
+    <div id="contact-us" className="pb-10 relative">
+      <Blur
+        mainClassName="hidden lg:block absolute -bottom-[100px] -left-[150px]"
+        blurStrength="250"
+        blurSize="300"
+      />
       <h2 className="font-bold text-center mb-20 text-xl sm:text-2xl lg:text-3xl text-white">
         Let's <span className="text-primary">Thryve</span> Together
       </h2>
