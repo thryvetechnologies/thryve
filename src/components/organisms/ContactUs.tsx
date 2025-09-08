@@ -11,6 +11,12 @@ const ContactUs = () => {
     type: "success" | "error";
   } | null>(null);
 
+  // Custom styles to handle autofill
+  const inputStyle = {
+    WebkitBoxShadow: '0 0 0 1000px black inset',
+    WebkitTextFillColor: 'white !important',
+  } as React.CSSProperties;
+
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -114,7 +120,8 @@ const ContactUs = () => {
                 name="name"
                 id="name"
                 required
-                className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 autofill:bg-black autofill:text-white autofill:shadow-[inset_0_0_0px_1000px_rgb(0,0,0)]"
+                style={inputStyle}
+                className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
               />
             </div>
 
@@ -128,7 +135,8 @@ const ContactUs = () => {
                 name="email"
                 id="email"
                 required
-                className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 autofill:bg-black autofill:text-white autofill:shadow-[inset_0_0_0px_1000px_rgb(0,0,0)]"
+                style={inputStyle}
+                className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
               />
             </div>
           </div>
@@ -143,7 +151,8 @@ const ContactUs = () => {
               name="title"
               id="subject"
               required
-              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 autofill:bg-black autofill:text-white autofill:shadow-[inset_0_0_0px_1000px_rgb(0,0,0)]"
+              style={inputStyle}
+              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
             />
           </div>
 
@@ -157,7 +166,8 @@ const ContactUs = () => {
               id="message"
               rows={4}
               required
-              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 resize-vertical min-h-[120px] autofill:bg-black autofill:text-white autofill:shadow-[inset_0_0_0px_1000px_rgb(0,0,0)]"
+              style={inputStyle}
+              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 resize-vertical min-h-[120px]"
             ></textarea>
           </div>
 
