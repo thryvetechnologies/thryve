@@ -34,7 +34,6 @@ const Projects = () => {
 
         <Carousel
           className="relative z-[2] w-full"
-          centerMode={!isMobile}
           centerSlidePercentage={isMobile ? 100 : 64}
           infiniteLoop
           autoPlay
@@ -52,7 +51,7 @@ const Projects = () => {
                 type="button"
                 onClick={onClick}
                 title={label}
-                className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full p-3 text-amber-400 bg-amber-400/10 shadow-[0_0_30px_rgba(253,211,25,.45)] hover:bg-amber-400/20"
+                className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full p-3 text-primary bg-primary-400/10 shadow-[0_0_10px_rgba(253,211,25,.45)]"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -71,7 +70,7 @@ const Projects = () => {
                 type="button"
                 onClick={onClick}
                 title={label}
-                className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full p-3 text-amber-400 bg-amber-400/10 shadow-[0_0_30px_rgba(253,211,25,.45)] hover:bg-amber-400/20"
+                className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full p-3 text-primary bg-primary-400/10 shadow-[0_0_10px_rgba(253,211,25,.45)]"
               >
                 <svg
                   viewBox="0 0 24 24"

@@ -55,7 +55,7 @@ const TeamProfile: React.FC = () => {
                 onClick={() => handleImageTouch(member.id)}
               />
 
-              <div className="hidden lg:flex absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-3 px-3 flex-col justify-start items-center text-center">
+              <div className="hidden lg:flex absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 py-3 px-3 flex-col justify-start items-center text-center rounded-lg">
                 <div className="mb-4">
                   <h1 className="text-lg sm:text-xl lg:text-2xl font-bold mb-1">
                     <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
@@ -74,7 +74,7 @@ const TeamProfile: React.FC = () => {
               </div>
 
               <div
-                className={`lg:hidden absolute inset-0 bg-black bg-opacity-90 transition-opacity duration-300 p-3 flex flex-col justify-start ${
+                className={`lg:hidden absolute inset-0 bg-black bg-opacity-90 transition-opacity duration-300 p-3 flex flex-col justify-start rounded-lg ${
                   activeMember === member.id
                     ? "opacity-100"
                     : "opacity-0 pointer-events-none"
