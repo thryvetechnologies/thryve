@@ -46,12 +46,12 @@ const ContactUs = () => {
     }
   };
 
-  const socialIcons = [
-    { src: "/icons/Facebook.svg", alt: "Facebook" },
-    { src: "/icons/Github.svg", alt: "Github" },
-    { src: "/icons/Instagram.svg", alt: "Instagram" },
-    { src: "/icons/Linkedin.svg", alt: "LinkedIn" },
-  ];
+  // const socialIcons = [
+  //   { src: "/icons/Facebook.svg", alt: "Facebook" },
+  //   { src: "/icons/Github.svg", alt: "Github" },
+  //   { src: "/icons/Instagram.svg", alt: "Instagram" },
+  //   { src: "/icons/Linkedin.svg", alt: "LinkedIn" },
+  // ];
 
   return (
     <div id="contact-us" className="pb-10 relative">
@@ -81,13 +81,14 @@ const ContactUs = () => {
             initiatives.
           </p>
 
-          <div className="hidden lg:flex gap-4">
+          {/* <div className="hidden lg:flex gap-4">
             {socialIcons.map((icon) => (
               <a key={icon.alt} href="#" className="flex items-center mb-4">
                 <img src={icon.src} alt={icon.alt} className="w-6 h-6 mr-2" />
               </a>
             ))}
-          </div>
+          </div> */}
+          <div></div>
         </div>
 
         <form
