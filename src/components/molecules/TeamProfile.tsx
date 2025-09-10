@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-interface TeamMember {
+type TeamMember = {
   id: string;
   name: string;
   title: string;
   description_desktop: string;
   description_mobile: string;
   image: string;
-}
+};
 
 const teamMembers: TeamMember[] = [
   {
@@ -15,9 +15,9 @@ const teamMembers: TeamMember[] = [
     name: "Sihala Weragama",
     title: "The Designer",
     description_desktop:
-      "As a visionary UX/UI architect, Sihala brings an inquisitive mind and an unyielding motivation to redefine digital interactions. Passionate about elevating experiences beyond mere aesthetics, he meticulously crafts interfaces that are intuitively delightful and profoundly empowering. His commitment to collaborative excellence, coupled with a remarkable adaptability and a relentless drive for perfection, makes him an integral force in Thryve's mission to ensure every solution truly thrives.",
+      "As a visionary UX/UI designer, Sihala brings an inquisitive mind and an unyielding motivation to redefine digital interactions. Passionate about elevating experiences beyond mere aesthetics, he meticulously crafts interfaces that are intuitively delightful and profoundly empowering. His commitment to collaborative excellence, coupled with a remarkable adaptability and a relentless drive for perfection, makes him an integral force in Thryve's mission to ensure every solution truly thrives.",
     description_mobile:
-      "Sihala is a visionary UX/UI architect passionate about crafting intuitive, empowering, and delightful digital experiences. With adaptability, collaboration, and a drive for excellence, he advances Thryve's mission to help every solution thrive.",
+      "Sihala is a visionary UX/UI designer passionate about crafting intuitive, empowering, and delightful digital experiences. With adaptability, collaboration, and a drive for excellence, he advances Thryve's mission to help every solution thrive.",
     image: "/images/Sihala.png",
   },
   {
@@ -81,17 +81,17 @@ const TeamProfile: React.FC = () => {
                 }`}
               >
                 <div className="mb-2">
-                  <h1 className="text-sm sm:text-base font-bold mb-1">
+                  <h1 className="text-sm sm:text-base font-bold mb-1 text-center">
                     <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                       {member.name}
                     </span>
                   </h1>
-                  <h2 className="text-xs sm:text-sm text-gray-300 font-light">
+                  <h2 className="text-xs sm:text-sm text-gray-300 font-light text-center">
                     {member.title}
                   </h2>
                 </div>
                 <div className="flex-1 flex items-center">
-                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed font-light text-center">
                     {member.description_mobile}
                   </p>
                 </div>

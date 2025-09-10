@@ -121,7 +121,7 @@ const ContactUs = () => {
                 id="name"
                 required
                 autoComplete="off"
-                className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
+                className="bg-black border border-primary placeholder:text-yellow-200/40 placeholder:italic rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
               />
             </div>
 
@@ -136,7 +136,7 @@ const ContactUs = () => {
                 id="email"
                 required
                 autoComplete="off"
-                className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
+                className="bg-black border border-primary rounded-lg px-4 py-3 placeholder:text-yellow-200/40 placeholder:italic text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
               />
             </div>
           </div>
@@ -152,7 +152,7 @@ const ContactUs = () => {
               id="subject"
               required
               autoComplete="off"
-              className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
+              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder:text-yellow-200/40 placeholder:italic focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300"
             />
           </div>
 
@@ -167,7 +167,7 @@ const ContactUs = () => {
               rows={4}
               required
               autoComplete="off"
-              className="bg-black border border-primary rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 resize-vertical min-h-[120px]"
+              className="bg-black border border-primary rounded-lg px-4 py-3 text-white placeholder:text-yellow-200/40 placeholder:italic focus:outline-none focus:ring-2 focus:ring-primary focus:shadow-lg focus:shadow-primary/20 transition-all duration-300 resize-vertical min-h-[120px]"
             ></textarea>
           </div>
 
