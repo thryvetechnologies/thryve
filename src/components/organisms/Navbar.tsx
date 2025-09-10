@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative z-10">
       <nav className="flex items-center justify-between">
         <img src="/icons/ThyrveLogo.svg" alt="Logo" />
 
